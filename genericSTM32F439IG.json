@@ -1,0 +1,40 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DSTM32F439xx -DSTM32F4xx",
+    "f_cpu": "180000000L",
+    "mcu": "stm32f439igt6",
+    "product_line": "STM32F439xx",
+    "variant": "Generic_F439IG"
+  },
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "STM32F439IG",
+    "openocd_target": "stm32f4x",
+    "svd_path": "STM32F439x.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "stm32cube",
+    "libopencm3"
+  ],
+  "name": "STM32F439IG (256k RAM. 1024k Flash)",
+  "upload": {
+    "maximum_ram_size": 262144,
+    "maximum_size": 1048576,
+    "protocol": "stlink",
+    "protocols": [
+      "blackmagic",
+      "dfu",
+      "jlink",
+      "serial",
+      "stlink"
+    ]
+  },
+  "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f439ig.html",
+  "vendor": "Generic"
+}
